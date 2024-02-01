@@ -1,0 +1,12 @@
+package edu.kh.basic;
+
+// 한 줄 주석 : 컴파일러(번역기)가 해석하지 않는 부분
+
+/* 범위주석
+ * 
+ * 
+ * */
+
+public class JavaTest {
+
+}
