@@ -35,4 +35,21 @@
     <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
     <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Car"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Tesla"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Spark"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.service.PolyService"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Animal"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Fish"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.AbstractService"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Person"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.HGDCalculator"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.PHSCalculator"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.Calculator"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Book"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Novel"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Textbook"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Poetry"/>
+    <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
+    <fullyQualifiedTypeName name="com.hw2.model.service.prison"/>
 </qualifiedTypeNameHistroy>
