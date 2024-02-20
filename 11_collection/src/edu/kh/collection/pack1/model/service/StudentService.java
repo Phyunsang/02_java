@@ -1,13 +1,15 @@
-package edu.kh.collection.model.service;
+package edu.kh.collection.pack1.model.service;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-import edu.kh.collection.model.vo.Student;
+import edu.kh.collection.pack1.model.vo.Student;
 
 public class StudentService {
 	
@@ -95,6 +97,8 @@ public class StudentService {
 			System.out.println("4. 학생 정보 제거");
 			System.out.println("5. 이름으로 검색(일치)");
 			System.out.println("6. 이름으로 검색(포함)");
+			System.out.println("7. 나이순으로 정렬"); // Comparable 사용
+			System.out.println("8. 이름순으로 정렬"); // Comparator 사용
 			System.out.println("0. 프로그램 종료");
 			
 			System.out.println("메뉴 번호 선택 : ");
@@ -109,8 +113,10 @@ public class StudentService {
 				case 2 : selectAll(); break;
 				case 3 : System.out.println(updateStudent()); break;
 				case 4 : System.out.println(removeStudent()); break;
-				case 5 : /*searchName1();*/ break;
-				case 6 : /*searchName2();*/ break;
+				case 5 : searchName1(); break;
+				case 6 : searchName2(); break;
+				case 7 : sortByAge(); break;
+				case 8 : sortByName(); break;
 				case 0 : System.out.println("프로그램 종료.."); break;
 				default : System.out.println("메뉴에 작성된 번호만 입력하세요!");
 				}
@@ -356,7 +362,27 @@ public class StudentService {
 	 */
 	
 	public void searchName1() {
+		System.out.println("====학생 검색(이름 완전 일치)====");
 		
+		System.out.println("검색할 이름 입력 : ");
+		String input = sc.next();
+		
+		boolean flag = true;
+		
+		// 향상된 for문
+		for(Student std : studentList) {
+			
+			if( input.equals(std.getName())) { // 이름이 일치하는 경우
+				System.out.println(std); // std.toString()
+				
+				flag = false;
+				}
+			
+		}
+		
+		if(flag) {
+			System.out.println("검색 결과가 없습니다!");
+		}
 		
 	}
 	
@@ -369,8 +395,70 @@ public class StudentService {
 	 */
 	public void searchName2() {
 		
-		// boolean String.contains(문자열) : String에 문자열이 포함되어 있으면 true / 없으면 false
-				
+		
+		System.out.println("====학생 검색(문자열 포함)====");
+		
+		System.out.println("이름에 포함되는 문자열 입력 : ");
+		String input = sc.next();
+		
+		boolean flag = true;
+		
+		for(Student std : studentList) {
+			
+			// boolean String.contains(문자열) : String에 문자열이 포함되어 있으면 true / 없으면 false	
+			if( std.getName().contains(input) ) {
+				System.out.println( std );
+				flag = false;
+			}
+			
+			
+		}
+		
+		if(flag) {
+			System.out.println("검색 결과가 없습니다.");
+		}
+		
+		
+		
+	}
+	
+	
+	public void sortByAge() {
+		// 나이에 따라 오름차순 정렬
+		Collections.sort(studentList);
+		
+		// 정렬된 결과 출력
+		for(Student std : studentList) {
+			System.out.println(std);
+		}
+	}
+	
+	
+	public void sortByName() {
+		
+		// 이름에 따라 정렬하는 Comparator 객체 생성
+		Comparator<Student> nameComparator = Comparator.comparing(Student::getName);
+		// Comparator 인터페이스의 static 메서드인 comparing()을 사용하여 Comparator를 생성
+		// => comparing()는 주어진 키(key)를 기반으로 객체를 비교함.
+		// Student::getName : 메서드 레퍼런스(Method Reference)
+		// -> Student 클래스의 getName() 메서드를 가리키는 것.
+		// -> 이 메서드를 비교의 키로 사용하여  Student 객체를 비교하고 정렬함.
+		// --> Comparator, comparing,(Student::getName)은 이름(name)을 기준으로
+		//		학생(Student) 객체를 비교하는 Comparator 를 생성.
+		
+		
+		
+		
+		// 이름에 따라 정렬
+		Collections.sort(studentList, nameComparator);
+		
+		// 정렬된 결과 출력
+		for(Student std : studentList) {
+			System.out.println(std);
+		}
+		
+		
+		
 	}
 	
 	

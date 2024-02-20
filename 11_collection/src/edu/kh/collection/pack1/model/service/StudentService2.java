@@ -1,11 +1,11 @@
-package edu.kh.collection.model.service;
+package edu.kh.collection.pack1.model.service;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import edu.kh.collection.model.vo.Student;
+import edu.kh.collection.pack1.model.vo.Student;
 
 public class StudentService2 {
 	
