@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import edu.kh.collection.pack1.model.vo.Student;
@@ -31,6 +33,8 @@ public class StudentService {
 	
 	private List<Student> studentList = new ArrayList<Student>(); // 검색(조회)에 효율적
 	//private List studentList = new LinkedList(); // 추가, 수정, 삭제 효율적
+	
+	
 	
 	public StudentService() { // 기본생성자
 		
