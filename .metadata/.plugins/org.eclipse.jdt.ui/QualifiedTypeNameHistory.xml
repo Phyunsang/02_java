@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Tesla"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Spark"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.service.PolyService"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Animal"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Fish"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.AbstractService"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Person"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.HGDCalculator"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.PHSCalculator"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.Calculator"/>
-    <fullyQualifiedTypeName name="com.hw1.model.dto.Book"/>
-    <fullyQualifiedTypeName name="com.hw1.model.dto.Novel"/>
     <fullyQualifiedTypeName name="com.hw1.model.dto.Textbook"/>
     <fullyQualifiedTypeName name="com.hw1.model.dto.Poetry"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
@@ -21,7 +9,6 @@
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalInternalFrameTitlePane"/>
     <fullyQualifiedTypeName name="edu.kh.collection.model.service.StudentService"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="edu.kh.collection.model.service.StudentService2"/>
     <fullyQualifiedTypeName name="edu.kh.collection.model.vo.Student"/>
     <fullyQualifiedTypeName name="javax.lang.model.element.Name"/>
@@ -50,7 +37,6 @@
     <fullyQualifiedTypeName name="edu.kh.collection.pack2.model.vo.Person"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="edu.kh.collection.pack4.model.service.JavaAPIService"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -60,4 +46,18 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.poppyPlaytime.model.service.ToyFactory"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="edu.kh.io.pack1.model.service.FileService"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="edu.kh.io.pack2.model.service.ByteService"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
