@@ -6,13 +6,14 @@ public class ToduListRun {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("========프로그램 실맹========");
+		System.out.println("========프로그램 실행========");
 		
 		// 프로잭트 흐름
 		// Run <-> View <-> Service <-> DAO <-> File
 		TodoListView view = new TodoListView();
-		//view.startView();
+		view.startView();
 		view.todoListFullView();
+		
 	}
 
 }
